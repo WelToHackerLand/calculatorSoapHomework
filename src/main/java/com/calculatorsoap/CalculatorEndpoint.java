@@ -24,8 +24,11 @@ public class CalculatorEndpoint {
     @ResponsePayload
     public CalculatorResponse getResult(@RequestPayload CalculatorRequest request) {
         CalculatorResponse response = new CalculatorResponse();
-        response.setResult(CalculatorRepository.findResult(request.getExpression()));
-
+        try {
+            response.setResult(calculatorRepository.findResult(request.getExpression()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return response;
     }
 }
