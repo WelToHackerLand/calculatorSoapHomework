@@ -13,7 +13,7 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = CalculatorClientConfig.class, loader = AnnotationConfigContextLoader.class)
-public class CountryClientLiveTest {
+public class CalculatorClientLiveTest {
 
     @Autowired
     CalculatorClient client;
