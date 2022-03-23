@@ -27,6 +27,9 @@ public class CalculatorRepository {
         else if (operator.equals("*")) {
             return num0 * num1;
         }
+        else if (operator.equals("**")) {
+            return Math.pow(num0, num1);
+        }
         throw new Exception("issue with expression");
     }
 }

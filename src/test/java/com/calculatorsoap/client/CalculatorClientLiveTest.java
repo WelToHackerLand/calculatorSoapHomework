@@ -19,7 +19,7 @@ public class CalculatorClientLiveTest {
     CalculatorClient client;
 
     @Test
-    public void givenCountryService_whenCountryPoland_thenCapitalIsWarsaw() {
+    public void AdditionTest() {
         Expression value = new Expression();
         value.setNum0(1);
         value.setNum1(2);
